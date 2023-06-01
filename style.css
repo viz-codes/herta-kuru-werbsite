@@ -1,0 +1,130 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 980px;
+    margin: 0px auto;
+}
+
+.center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-y {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+}
+
+p {
+    font-size: 10pt;
+}
+
+a {
+    color: #242424;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 3px;
+    font-size: 10pt;
+    border-radius: 3px;
+    color: #0084ff;
+    border: 1px solid #0084ff;
+    transition: 0.25s all;
+}
+
+.btn:hover {
+    background: #0084ff;
+    color: #efefef;
+    cursor: pointer;
+}
+
+/*end config*/
+
+.top {
+    width: 100%;
+    height: 760px;
+    background: #0084ff;
+}
+
+.top h1, h3 {
+    text-align: center;
+    color: #efefef;
+}
+
+.top h1 {
+    padding-top: 20px;
+    font-size: 32pt;
+}
+
+.top h3 {
+    font-size: 18pt;
+}
+
+.top .btn {
+    border: 1px solid #efefef;
+    color: #efefef;
+}
+
+.top .center {
+    margin: 5px 0;
+}
+
+.top .btn:hover {
+    background: #efefef;
+    color: #0084ff;
+}
+
+.animated {
+    animation: fromltr 2s linear;
+    position: absolute;
+    transform: translateX(900px);
+    z-index: 0;
+}
+
+.bottom {
+    width: 100%;
+    height: 560px;
+}
+
+@keyframes fromltr {
+    0% {
+        transform: translateX(900px)
+    }
+
+    100% {
+        transform: translateX(-1500px);
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .container {
+        width: 98%;
+    }
+}
